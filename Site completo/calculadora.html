@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>EasyFit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Source+Serif+Pro:wght@600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css/calculadora.css">
+	<link rel="shortcut icon" type="image/png" href="imagens/logo.png">
+	<script src="scripts/jquery-3.5.1.min.js"></script>
+	<script src="scripts/jquery.inputmask.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="home.html" title="pagina inicial">
+				<img src="imagens/logo.png" title="logo EasyFit" alt="logo EasyFit">
+			</a>
+		</div>
+		<nav>
+			<ul>
+				<div class="menu">
+					<li>
+						<a href="home.html" title="Página Inicial">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="sobre.html" title="Sobre a EasyFit">
+							Sobre
+						</a>
+					</li>
+					<li>
+						<a href="calculadora.html" title="Calculadora de IMC">
+							Calculadora
+						</a>
+					</li>
+				</div>
+				<div class="redes-sociais">
+					<li>
+						<a href="http://instagram.com" title="Instagram">
+							<img src="./imagens/camera.png" />
+						</a>
+					</li>
+					<li>
+						<a href="http://facebook.com" title="Facebook">
+							<img src="./imagens/facebook.png">
+						</a>
+					</li>
+					<li>
+						<a href="http://twitter.com" title="twitter">
+							<img src="./imagens/twitter1.png">
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	<div class="art">
+		<article>
+	<h2>
+		O que é o teste de IMC ?
+	</h2>
+	<P>
+O Índice de Massa Corpórea (IMC) é adotado pela Organização Mundial de Saúde para o cálculo do peso ideal de cada indivíduo. Nos campos abaixo, coloque seu peso e altura e espere o resultado.
+	</P>
+</article>
+</div>
+	<div class = "calc">
+		<h1>Calculadora IMC</h1>
+		<form>
+			<p>Altura:<input id="alt" placeholder="Informe sua altura" maxlength="4" min="1" max="10"></p>
+			<p>Peso:<input id="peso" placeholder="Informe seu peso" maxlength="5"></p>
+			<button>Calcular IMC</button>
+		</form>
+
+		<p id="mensagem"></p>
+		<p id="mensagem2"></p>
+	</div>
+	<aside>
+	<h2>
+		Como melhorar o resultado do IMC
+	</h2>
+	<p>Quando o resultado do IMC não é o ideal, existem alguns cuidados, principalmente com a alimentação, que podem ajudar a atingir o valor ideal:</p>
+	<br>
+	<h3>O que fazer para baixar o IMC</h3>
+	<P>
+		Se o resultado do IMC estiver acima do ideal e a pessoa não for muito musculosa, nem atleta, pode indicar que é preciso emagrecer, eliminando o acúmulo de gordura, que contribui para o peso alto. Para isso deve-se comer somente alimentos ricos em vitaminas e minerais, tendo o cuidado de diminuir o consumo de alimentos industrializados e ricos em gordura, como massa folheada, bolos, biscoitos recheados e salgadinhos, por exemplo.
+
+		Para que os resultados sejam alcançados ainda mais rápido é aconselhado fazer exercícios para aumentar o gasto calórico e aumentar o metabolismo. Recorrer a chás e suplementos naturais pode ser um estímulo para ajudar a emagrecer de forma mais rápida e saudável, sem ter que passar fome. Alguns exemplos são o chá de hibisco ou o chá de gengibre com canela, mas um nutricionista poderá indicar outros que sejam mais adequados às necessidades de cada pessoa
+	</P>
+	<br>
+	<h3>O que fazer para aumentar o IMC</h3>
+	<P>
+		Se o resultado do IMC estiver abaixo do ideal, o que se deve fazer é aumentar a ingestão de alimentos ricos em vitaminas e minerais de boa qualidade, mas sem cair no erro de comer alimentos processados e ricos em gordura trans. Pizzas, frituras, cachorro quente e hambúrguer não são os melhores alimentos para quem precisa aumentar o peso de forma saudável, porque este tipo de gordura pode se acumular no interior das artérias, aumentando o risco de doença cardíaca.
+	</P>
+</aside>
+	<div class="clearfix">
+	</div>
+	<footer>
+	
+		<div class="container">
+			<p title="site feito por Guilherme luis, Gabriel Leon e Lucas de Almeida">site feito por Guilherme luis, Gabriel Leon e Lucas de Almeida.Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> </p>
+		</div>
+	
+	</footer>
+	<script>
+		$(document).ready(function () {
+			$('#alt').inputmask("9,99");  //static mask
+		});
+	</script>
+	<script src="calc.js"></script>
+</body>
+</html>
